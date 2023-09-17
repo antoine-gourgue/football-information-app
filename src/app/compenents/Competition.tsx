@@ -9,7 +9,7 @@ const Competition = ({data}:{data:matchesType}) => {
     return(
         <div className='mb-4 flex justify-between items-center px-4 py-1 bg-slate-600 hover:bg-slate-700 rounded-md'>
             <div className='flex space-x-4'>
-                <Image src={data?.competition.emblems} alt={data?.competition.name} width={20} height={20} />
+                <Image src={data?.competition.emblem} alt={data?.competition.name} width={20} height={20} />
                 <p className='text-sm text-teal-400'>{data?.competition.name}</p>
             </div>
             <p className='text-xs ms:text-sm '>{dateConvert}</p>
