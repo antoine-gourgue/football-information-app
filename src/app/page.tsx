@@ -13,7 +13,7 @@ export default async function Home() {
 
   return (
       <div className={'flex-1'}>
-          <section className="px-2 md:px-4 md:max-w-[800px]">
+          <section className="px-2 md:px-4 md:max-w-[1200px]">
               <div className="flex justify-between items-center mb-4 md:mb-2">
                   <h1 className="text-md md:text-xl font-bold">MATCHES</h1>
                   <div className="px-4 py-0 md:py-1 bg-slate-600 rounded-md text-textPrimary text-sm">

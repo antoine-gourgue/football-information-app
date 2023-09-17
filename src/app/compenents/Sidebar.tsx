@@ -10,6 +10,9 @@ const  Sidebar :FC = () => {
         {id:5, name:"Ligue 1", href:"ligue-1", emblem:"/img/leagues/ligue_1.webp"},
         {id:6, name:"Championship", href:"championship", emblem:"/img/leagues/championship.webp"},
         {id:7, name:"Brazilian Champion Series A", href:"brazilian-series-a", emblem:"/img/leagues/brazilian_serie_a.webp"},
+        {id:8, name:"UEFA Champions League", href:"uefa-champions-league", emblem:"/img/leagues/uefa_champions_league.svg"},
+
+
     ]
     return(
         <section className='px-2 md:px-4 py-2 bg-[rgb(40,46,58)] rounded-md'>
