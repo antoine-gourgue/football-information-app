@@ -22,6 +22,12 @@ const nextConfig = {
             },
             {
                 protocol: 'https',
+                hostname: 'media.npr.org',
+                port: '',
+                pathname: '/*/**',
+            },
+            {
+                protocol: 'https',
                 hostname: 's.yimg.com',
                 port: '',
                 pathname: '/*/**',

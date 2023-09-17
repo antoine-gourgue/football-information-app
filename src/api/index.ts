@@ -27,7 +27,8 @@ export const getMatchesfootballFinished = async () => {
 }
 
 export const getNewsInfo = async () => {
-    const newsData = await fetch(`https://newsapi.org/v2/everything?apiKey=${process.env.API_TOKEN_NEWS}&q=soccer&pageSize=5`,{next:{revalidate:30}})
+    const url = `https://newsapi.org/v2/everything?apiKey=${process.env.API_TOKEN_NEWS}&q=soccer&pageSize=5`
+    const newsData = await fetch(url,{next:{revalidate:30}})
     return newsData.json()
 }
 

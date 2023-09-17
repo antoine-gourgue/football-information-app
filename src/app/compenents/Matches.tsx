@@ -13,7 +13,7 @@ const Matches = ({data}:{data:matchesType}) => {
                 <div className='w-[20px] h-[20px] relative mr-2'>
                     <Image src={data?.homeTeam?.crest!} alt={data?.homeTeam?.name!} fill className='object-cover '/>
                 </div>
-                <p>{data?.homeTeam?.name}</p>
+                <p className='text-sm '>{data?.homeTeam?.name}</p>
             </div>
             <div className='px-2 m-auto flex justify-center items-center bg-slate-600 rounded-md'>
                 {data?.status == 'FINISHED' ? (

@@ -3,6 +3,8 @@ import type {Metadata} from 'next'
 import {Inter} from 'next/font/google'
 import Navbar from "@/app/compenents/Navbar";
 import Sidebar from "@/app/compenents/Sidebar";
+import News from "@/app/compenents/News";
+import React from "react";
 
 const inter = Inter({subsets: ['latin']})
 
@@ -24,6 +26,7 @@ export default function RootLayout({
             <section className='flex space-x-4'>
                 <Sidebar />
                 {children}
+                <News />
             </section>
         </main>
 

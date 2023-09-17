@@ -51,3 +51,9 @@ export  type matchesType = {
     score?: scores
 
 }
+
+export type newsType = {
+    title: string,
+    url: string,
+    urlToImage: string,
+}
