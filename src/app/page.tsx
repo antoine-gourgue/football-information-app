@@ -13,7 +13,7 @@ export default function Home() {
           <p>{dateConvert}</p>
         </div>
       </div>
-      
+
     </section>
   )
 }
