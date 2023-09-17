@@ -1,8 +1,8 @@
-import React from "react";
+import {FC} from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-const Navbar = () => {
+const Navbar:FC = () => {
     return(
         <div className='flex justify-between items-center py-2'>
             <Link href='/' className='flex items-center space-x-2'>
