@@ -38,3 +38,17 @@ export const filterLeague = async (filterData:string) => {
     const getData = filterPremierLeague.filter((item) => item.competition.name === filterData)
     return getData
 }
+
+export const getLeagueStandings = async (leagueId: string) => {
+    try {
+        const response = await fetch(`https://api.football-data.org/v4/competitions/${leagueId}/standings`, options);
+        if (!response.ok) {
+            throw new Error(`Erreur lors de la récupération du classement de la ligue ${leagueId}`);
+        }
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Erreur lors de la récupération du classement de la ligue :', error);
+        throw error;
+    }
+};

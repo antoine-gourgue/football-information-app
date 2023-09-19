@@ -48,7 +48,9 @@ export  type matchesType = {
     matchday?: number,
     homeTeam?: matchesHomeTeam,
     awayTeam?: matchesAwayTeam,
-    score?: scores
+    score?: scores,
+    leagueCode: string,
+    name:string
 
 }
 
@@ -57,3 +59,4 @@ export type newsType = {
     url: string,
     urlToImage: string,
 }
+

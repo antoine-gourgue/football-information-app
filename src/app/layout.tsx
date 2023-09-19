@@ -29,7 +29,6 @@ export default function RootLayout({
                 <News/>
             </section>
         </main>
-
         </body>
         </html>
     )
